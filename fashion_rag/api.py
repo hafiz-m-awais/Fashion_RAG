@@ -60,7 +60,7 @@ async def query_fashion(req: QueryRequest):
     ).hexdigest()
 
     # ── Cache hit ──────────────────────────────────────────────────────────
-    cached_val = cache.get(cache_key)
+    cached_val = await cache.get(cache_key)
     if cached_val:
         data = json.loads(cached_val)
         data["cached"]     = True

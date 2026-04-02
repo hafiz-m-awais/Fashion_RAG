@@ -6,8 +6,8 @@ Loaded by api.py on every request (chain is stateless).
 from langchain_community.llms import Ollama
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
-from langchain.prompts import PromptTemplate
-from langchain.chains import RetrievalQA
+from langchain_community.chains import RetrievalQA
+from langchain_core.prompts import PromptTemplate
 from dotenv import load_dotenv
 import os
 

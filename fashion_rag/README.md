@@ -19,10 +19,10 @@ pip install -r requirements.txt
 ollama pull mistral:7b-instruct-q4_K_M
 
 # 3. Copy your dataset
-cp /path/to/your/dataset.csv clothes.csv
+cp D:\Side_Projects\Fashion_RAG\fashion_rag\clothes.csv
 
 # 4. Build the vector index (once)
-python ingest.py --csv fashion.csv
+python ingest.py --csv clothes.csv
 
 # 5. Start Redis (separate terminal)
 redis-server
